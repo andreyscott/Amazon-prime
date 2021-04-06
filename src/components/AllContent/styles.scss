@@ -1,0 +1,17 @@
+.contentTitle {
+  font-size: 18px;
+  color: gray;
+  margin-left: 15px;
+}
+.contentGridDisplay {
+  display: grid;
+  grid-template-columns: repeat(5, 2fr);
+  margin: 0 auto;
+  margin-left: 10px;
+  grid-gap: 8px;
+  overflow-x: hidden;
+}
+.gridImg {
+  height: 130px;
+  object-fit: contain;
+}

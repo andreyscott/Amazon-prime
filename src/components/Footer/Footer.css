@@ -1,0 +1,72 @@
+.social__container {
+  padding: 1vw;
+  background-color: black;
+  font-size: 1rem;
+  text-align: center;
+  position: relative;
+}
+h3 {
+  font-size: 30px;
+  font-family: monospace;
+  color: gray;
+}
+
+a {
+  color: grey;
+}
+.icons {
+  font-size: 30px;
+  margin: 18px 0px 30px;
+  padding: 0px;
+}
+
+ul {
+  list-style: none;
+  display: inline-block;
+  line-height: 33px;
+  margin: 0px;
+  padding: 0px;
+  color: rgb(82, 82, 82);
+  transition: green 0.3s ease-in-out 0s;
+}
+
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+a.social:hover {
+  transform: translateY(-14px);
+}
+
+/* .icons {
+  font-size: 30px;
+  margin: 18px 0px 30px;
+  padding: 0px;
+  color: rgb(175, 13, 13);
+} */
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media (max-width: 991px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+}
+
+@media (max-width: 479px) {
+}
+
+/* Responsive settings end here */

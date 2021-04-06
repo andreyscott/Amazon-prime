@@ -1,0 +1,123 @@
+.headingBanner {
+  color: white;
+  font-size: 19px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.banner {
+  display: flex;
+  left: 10px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  justify-content: space-between;
+  z-index: -1;
+}
+.banner::-webkit-scrollbar {
+  display: none;
+}
+.leftIconDiv {
+  left: 0px;
+  max-height: 166px;
+  z-index: 1;
+  width: 30px;
+  color: gray;
+  position: absolute;
+  margin-top: 10px;
+  -webkit-transition: opacity 0.25s ease, background-color 0.25s ease;
+  transition: opacity 0.25s ease, background-color 0.25s ease;
+  background-color: rgba(15, 23, 30, 0.5);
+}
+.leftIcon {
+  min-height: 160px;
+}
+.leftIconDiv:hover {
+  .leftIcon {
+    color: white;
+    transform: scale(1.5);
+  }
+}
+.rightIconDiv {
+  margin-top: -180px;
+  right: 0px;
+  min-height: 166px;
+  z-index: 1;
+  width: 40px;
+  color: gray;
+  position: absolute;
+  -webkit-transition: opacity 0.25s ease, background-color 0.25s ease;
+  transition: opacity 0.25s ease, background-color 0.25s ease;
+  background-color: rgba(15, 23, 30, 0.5);
+  //background-color: black;
+  cursor: pointer;
+}
+.rightIcon {
+  min-height: 160px;
+  margin-left: 0px;
+  padding-top: -200px;
+}
+.rightIconDiv:hover {
+  .rightIcon {
+    color: white;
+    transform: scale(1.5);
+  }
+}
+
+.mediaScreen {
+  margin-top: 5px;
+  z-index: 0;
+}
+
+.mediaDiv {
+  position: static;
+  width: 100%;
+  cursor: pointer;
+  z-index: 0;
+  padding: 10px 0px;
+  padding-top: 5px;
+  .displayhoverScreen {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    padding: 1px;
+    min-height: 400px;
+    transform: scale(1);
+  }
+  &:hover > .displayhoverScreen {
+    //position: absolute;
+    display: block;
+
+    // padding: 1px;
+    //z-index: 3;
+  }
+}
+.mediaImg {
+  height: 160px;
+  object-fit: cover;
+  margin: 5px;
+  border-radius: 4px;
+  z-index: 0;
+  visibility: visible;
+}
+
+.mediaDiv:hover {
+  padding: 0px;
+  .mediaImg {
+    height: 0px;
+    width: 284px;
+    visibility: hidden;
+    // margin-top: -10px;
+  }
+}
+
+.moreButton {
+  color: lightblue;
+  font-size: 14px;
+  margin-right: 15px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.moreButton:hover {
+  color: white;
+}
